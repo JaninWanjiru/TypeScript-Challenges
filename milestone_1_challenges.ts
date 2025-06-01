@@ -70,3 +70,19 @@ console.log(findLargest(-1, -5, -3));
 console.log(`Your BMI is - ${calculateBMI(68, 1.75)}`);
 console.log(`Your BMI is -  ${calculateBMI(85, 1.8)}`);
 
+// Challenge 8: Greeting based on Time
+    function greetUser(name: string, hour: number):string {
+        if (hour >= 5 && hour <= 11) {
+        return `Good morning, ${name}!`;
+    } else if (hour >= 12 && hour <= 17) {
+        return `Good afternoon, ${name}!`;
+    } else if (hour >= 18 && hour <= 21) {
+        return `Good evening, ${name}!`;
+    } else {
+        return `Good night, ${name}!`;
+    } 
+}
+console.log(greetUser("kelly", 8));
+console.log(greetUser("Benson", 15));
+console.log(greetUser("Hope", 20));
+console.log(greetUser("Kabi", 2));

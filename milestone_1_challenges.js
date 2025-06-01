@@ -66,3 +66,22 @@ function calculateBMI(weight, height) {
 }
 console.log("Your BMI is - ".concat(calculateBMI(68, 1.75)));
 console.log("Your BMI is -  ".concat(calculateBMI(85, 1.8)));
+// Challenge 8: Greeting based on Time
+function greetUser(name, hour) {
+    if (hour >= 5 && hour <= 11) {
+        return "Good morning, ".concat(name, "!");
+    }
+    else if (hour >= 12 && hour <= 17) {
+        return "Good afternoon, ".concat(name, "!");
+    }
+    else if (hour >= 18 && hour <= 21) {
+        return "Good evening, ".concat(name, "!");
+    }
+    else {
+        return "Good night, ".concat(name, "!");
+    }
+}
+console.log(greetUser("kelly", 8));
+console.log(greetUser("Benson", 15));
+console.log(greetUser("Hope", 20));
+console.log(greetUser("Kabi", 2));
