@@ -11,3 +11,10 @@ function convert(minutes) {
 }
 console.log(convert(5));
 console.log(convert(2));
+// Challenge 3: Perimeter of a Rectangle
+function findPerimeter(length, width) {
+    var perimeter = 2 * (length + width);
+    return perimeter;
+}
+console.log(findPerimeter(6, 7));
+console.log(findPerimeter(20, 10));
