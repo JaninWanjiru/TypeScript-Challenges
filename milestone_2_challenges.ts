@@ -180,5 +180,24 @@ console.log(linearSearch([5, 3, 7, 1, 4], 7));
 console.log(linearSearch([5, 3, 7, 1, 4], 10)); 
 
 
+// Challenge 12: Reverse Linear Search
+function reverseLinearSearch(arr: unknown[], value: unknown): number {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    let current = arr[i];
+
+    if (typeof current === typeof value) {
+      if (current === value) {
+        return i;
+      }
+    }
+  }
+
+  return -1;
+}
+
+console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));  
+console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));    
+
+
 
 
