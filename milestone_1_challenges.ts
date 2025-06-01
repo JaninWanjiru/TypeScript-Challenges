@@ -53,3 +53,20 @@ function findLargest(a: number, b: number, c: number):number {
 }
 console.log(findLargest(5, 9, 3));
 console.log(findLargest(-1, -5, -3));
+
+// Challenge 7: BMI Calculator
+    function calculateBMI(weight: number, height: number): string {
+        const BMI = weight / (height * height);
+    if (BMI < 18.5) {
+        return "Underweight";
+    } else if (BMI >= 18.5 && BMI < 24.9) {
+        return "Normal weight";
+    } else if (BMI >= 25 && BMI < 29.9) {
+        return "Overweight";
+    } else {
+        return "Obese";
+    }
+}
+console.log(`Your BMI is - ${calculateBMI(68, 1.75)}`);
+console.log(`Your BMI is -  ${calculateBMI(85, 1.8)}`);
+
