@@ -12,6 +12,7 @@ function sumOfPositives(numbers: number[]): number {
 }
 console.log(sumOfPositives([1, -3, 5, -2, 9, -8]));
 
+
 // Challenge 2: Find Maximum Value
 function findMax(numbers: number[]): number {
   let max = numbers[0];
@@ -23,3 +24,28 @@ function findMax(numbers: number[]): number {
   return max;
 }
 console.log(findMax([3, 7, 2, 9, 5]));
+
+
+// Challenge 3: Election winner
+type Candidate = {
+  name: string;
+  votes: number;
+};
+
+function findWinner(candidates: Candidate[]): Candidate {
+  let winner = candidates[0];
+  for (let i = 0; i < candidates.length; i++) {
+    if (candidates[i].votes > winner.votes) {
+      winner = candidates[i];
+    }
+  }
+  return winner;
+}
+
+const candidates: Candidate[] = [
+  { name: "Alice", votes: 50 },
+  { name: "Bob", votes: 75 },
+  { name: "Charlie", votes: 65 }
+];
+
+console.log(findWinner(candidates));
