@@ -241,4 +241,20 @@ const objectExample = ["apple", "banana", "apple", "orange", "banana", "apple"];
 console.log(countOccurences(objectExample));
 
 
+// Challenge 15: Remove Duplicates
+function removeDuplicates(array: (string | number)[]): (string | number)[] {
+  let newArray: { [key: string]: string | number } = {};
+  let result: (string | number)[] = [];
 
+  for (let i = 0; i < array.length; i++) {
+    const key = array[i].toString();
+    if (!newArray.hasOwnProperty(key)) {
+      newArray[key] = array[i];
+      result.push(array[i]);
+    }
+  }
+
+  return result;
+}
+
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
