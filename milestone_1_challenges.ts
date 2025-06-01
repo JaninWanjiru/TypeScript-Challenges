@@ -86,3 +86,20 @@ console.log(greetUser("kelly", 8));
 console.log(greetUser("Benson", 15));
 console.log(greetUser("Hope", 20));
 console.log(greetUser("Kabi", 2));
+
+// Challenge 9: FizzBuzz
+function fizzBuzzCheck(number: number): string {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number.toString();
+    }
+}
+console.log(fizzBuzzCheck(3));
+console.log(fizzBuzzCheck(10));
+console.log(fizzBuzzCheck(15));
+console.log(fizzBuzzCheck(7));
