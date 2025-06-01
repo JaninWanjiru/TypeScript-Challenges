@@ -158,6 +158,27 @@ function average(array: number[]): number {
 }
 
 console.log(average([2, 4, 6, 8])); 
-console.log(average([]));          
+console.log(average([]));  
+
+
+// Challenge 11: Linear Search
+function linearSearch(arr: unknown[], value: unknown): number {
+  for (let i = 0; i < arr.length; i++) {
+    let current = arr[i];
+
+    if (typeof current === typeof value) {
+      if (current === value) {
+        return i;
+      }
+    }
+  }
+
+  return -1;
+}
+
+console.log(linearSearch([5, 3, 7, 1, 4], 7));   
+console.log(linearSearch([5, 3, 7, 1, 4], 10)); 
+
+
 
 
