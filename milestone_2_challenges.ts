@@ -258,3 +258,31 @@ function removeDuplicates(array: (string | number)[]): (string | number)[] {
 }
 
 console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
+
+
+// Challenge 16: Most Frequent
+function mostFrequent(array: (string | number)[]): string | number | undefined {
+  const occurrences: { [key: string]: number } = {};
+  let count: number = 0;
+  let mostAppearance: string | number | undefined = undefined;
+
+  for (let i = 0; i < array.length; i++) {
+    const item = array[i];
+    const key = item.toString();
+
+    if (occurrences[key]) {
+      occurrences[key]++;
+    } else {
+      occurrences[key] = 1;
+    }
+
+    if (occurrences[key] > count) {
+      count = occurrences[key];
+      mostAppearance = item;
+    }
+  }
+
+  return mostAppearance;
+}
+
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4])); 
