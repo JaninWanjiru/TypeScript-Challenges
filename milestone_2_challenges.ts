@@ -93,3 +93,17 @@ function filterByLength(words: string[], minLength: number): string[] {
 const newArrayExample = ["cat", "giraffe", "hippo", "dog", "elephant"];
 console.log(filterByLength(newArrayExample, 5));
 
+
+// Challenge 7: Sum of Even Numbers
+function sumEvenNumbers(myArray: number[]): number {
+  let sumOfValues = 0;
+  
+  for(let i = 0; i < myArray.length; i++){
+    if (myArray[i] % 2 === 0){
+      sumOfValues = sumOfValues + myArray[i];
+    }
+  }
+  return sumOfValues;
+}
+
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
