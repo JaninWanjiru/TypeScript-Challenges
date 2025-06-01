@@ -28,4 +28,13 @@ function isNegative(num: number): boolean {
 console.log(isNegative(-23));
 console.log(isNegative(55));
 
-
+// Challenge 5 : Can I Drive
+function canDrive(name: string, age: number): string {
+    if (age >= 18) {
+        return `${name} is old enough to drive`;
+    } else {
+        return `${name} is not old enough to drive yet`;
+    }
+}
+console.log(canDrive("Jane", 22));
+console.log(canDrive("June", 12));
