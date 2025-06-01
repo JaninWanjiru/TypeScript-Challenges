@@ -199,5 +199,25 @@ console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));    
 
 
+// Challenge 13: Linear search all Indices
+function linearSearchAll(arr: unknown[], value: unknown): number[] {
+  let valueAppearance: number[] = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let current = arr[i];
+
+    if (typeof current === typeof value) {
+      if (current === value) {
+        valueAppearance.push(i);
+      }
+    }
+  }
+
+  return valueAppearance;
+}
+
+console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));  
+console.log(linearSearchAll([5, 3, 7, 1, 4], 10));    
+
 
 
