@@ -103,3 +103,17 @@ console.log(fizzBuzzCheck(3));
 console.log(fizzBuzzCheck(10));
 console.log(fizzBuzzCheck(15));
 console.log(fizzBuzzCheck(7));
+
+// Challenge 10: Perimeter 2
+    function perimeter2(letter: string, num: number):number | string {
+        type letter = "s" | "c";
+        if (letter === "s") {
+        return num * 4;
+    } else if (letter === "c") {
+        return num * 6.28;
+    } else {
+        return "Wrong input!";
+    }
+}
+console.log(perimeter2("s", 7));
+console.log(perimeter2("c", 4));
