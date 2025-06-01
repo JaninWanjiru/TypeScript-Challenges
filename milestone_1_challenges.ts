@@ -117,3 +117,16 @@ console.log(fizzBuzzCheck(7));
 }
 console.log(perimeter2("s", 7));
 console.log(perimeter2("c", 4));
+
+// Challenge 11: Sum of Even Numbers
+    function sumEvenNumbers(n: number):number {
+        let sum = 0;
+    for (let i = 2; i <= n; i+=2) {
+        sum += i;
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(6));
+console.log(sumEvenNumbers(10));
+console.log(sumEvenNumbers(5));
+

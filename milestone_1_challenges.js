@@ -118,3 +118,14 @@ function perimeter2(letter, num) {
 }
 console.log(perimeter2("s", 7));
 console.log(perimeter2("c", 4));
+// Challenge 11: Sum of Even Numbers
+function sumEvenNumbers(n) {
+    var sum = 0;
+    for (var i = 2; i <= n; i += 2) {
+        sum += i;
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(6));
+console.log(sumEvenNumbers(10));
+console.log(sumEvenNumbers(5));
