@@ -97,7 +97,7 @@ console.log(filterByLength(newArrayExample, 5));
 // Challenge 7: Sum of Even Numbers
 function sumEvenNumbers(myArray: number[]): number {
   let sumOfValues = 0;
-  
+
   for(let i = 0; i < myArray.length; i++){
     if (myArray[i] % 2 === 0){
       sumOfValues = sumOfValues + myArray[i];
@@ -107,3 +107,22 @@ function sumEvenNumbers(myArray: number[]): number {
 }
 
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+// Challenge 8: Difference Between Sum of Even and Odd Numbers
+function differenceEvenOdd(array: number[]): number {
+  let evenSum = 0;
+  let oddSum = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      evenSum += array[i];
+    } else {
+      oddSum += array[i];
+    }
+  }
+
+  return evenSum - oddSum;
+}
+
+console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
