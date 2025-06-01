@@ -67,3 +67,14 @@ function findLongestWord(words: string[]): string {
 const words = ["apple", "banana", "pear", "grapefruit"]
 console.log(findLongestWord(words));
 
+
+// Challenge 5: Count Properties
+function countProperties(obj: object): number {
+  return Object.keys(obj).length;
+}
+
+const ObjExample = { name: "Alice", age: 25, city: "Paris" };
+console.log(countProperties(ObjExample));
+
+
+// Challenge 6: Filter by Length
