@@ -220,4 +220,25 @@ console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
 console.log(linearSearchAll([5, 3, 7, 1, 4], 10));    
 
 
+// Challenge 14: Count Occurrences
+function countOccurences(arr: string[]): { [key: string]: number } {
+  let object: { [key: string]: number } = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    let item = arr[i];
+
+    if (object[item] === undefined) {
+      object[item] = 1;
+    } else {
+      object[item] += 1;
+    }
+  }
+
+  return object;
+}
+
+const objectExample = ["apple", "banana", "apple", "orange", "banana", "apple"];
+console.log(countOccurences(objectExample));
+
+
 
