@@ -133,3 +133,15 @@ console.log(powerUp(2, 3));
 console.log(powerUp(5, 0));
 console.log(powerUp(3, 4));
 console.log(powerUp(0));
+// Challenge 13: Factorial Calculator
+function factorial(n) {
+  if (n < 0) return 1;
+  var result = 1;
+  for (var i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorial(0));
+console.log(factorial(4));
+console.log(factorial(6));
