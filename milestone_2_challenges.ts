@@ -78,3 +78,18 @@ console.log(countProperties(ObjExample));
 
 
 // Challenge 6: Filter by Length
+function filterByLength(words: string[], minLength: number): string[] {
+  let newArray: string[] = [];
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length >= minLength) {
+      newArray.push(words[i]);
+    }
+  }
+
+  return newArray;
+}
+
+const newArrayExample = ["cat", "giraffe", "hippo", "dog", "elephant"];
+console.log(filterByLength(newArrayExample, 5));
+
