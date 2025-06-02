@@ -48,7 +48,8 @@ You'll practice with:
 2. **Initialize your project**
    ```bash
    npm init -y
-   npm install typescript --save-dev
+   npm install typescript -D
+   tsc --init
    ```
 3. **Compile the Type Script file**
    ```bash
