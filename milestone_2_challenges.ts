@@ -12,7 +12,6 @@ function sumOfPositives(numbers: number[]): number {
 }
 console.log(sumOfPositives([1, -3, 5, -2, 9, -8]));
 
-
 // Challenge 2: Find Maximum Value
 function findMax(numbers: number[]): number {
   let max = numbers[0];
@@ -24,7 +23,6 @@ function findMax(numbers: number[]): number {
   return max;
 }
 console.log(findMax([3, 7, 2, 9, 5]));
-
 
 // Challenge 3: Election winner
 type Candidate = {
@@ -45,11 +43,10 @@ function findWinner(candidates: Candidate[]): Candidate {
 const candidates: Candidate[] = [
   { name: "Alice", votes: 50 },
   { name: "Bob", votes: 75 },
-  { name: "Charlie", votes: 65 }
+  { name: "Charlie", votes: 65 },
 ];
 
 console.log(findWinner(candidates));
-
 
 // Challenge 4: Longest Word
 function findLongestWord(words: string[]): string {
@@ -64,9 +61,8 @@ function findLongestWord(words: string[]): string {
   return longest;
 }
 
-const words = ["apple", "banana", "pear", "grapefruit"]
+const words = ["apple", "banana", "pear", "grapefruit"];
 console.log(findLongestWord(words));
-
 
 // Challenge 5: Count Properties
 function countProperties(obj: object): number {
@@ -75,7 +71,6 @@ function countProperties(obj: object): number {
 
 const ObjExample = { name: "Alice", age: 25, city: "Paris" };
 console.log(countProperties(ObjExample));
-
 
 // Challenge 6: Filter by Length
 function filterByLength(words: string[], minLength: number): string[] {
@@ -93,13 +88,12 @@ function filterByLength(words: string[], minLength: number): string[] {
 const newArrayExample = ["cat", "giraffe", "hippo", "dog", "elephant"];
 console.log(filterByLength(newArrayExample, 5));
 
-
 // Challenge 7: Sum of Even Numbers
 function sumEvenNumbers(myArray: number[]): number {
   let sumOfValues = 0;
 
-  for(let i = 0; i < myArray.length; i++){
-    if (myArray[i] % 2 === 0){
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i] % 2 === 0) {
       sumOfValues = sumOfValues + myArray[i];
     }
   }
@@ -107,7 +101,6 @@ function sumEvenNumbers(myArray: number[]): number {
 }
 
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
-
 
 // Challenge 8: Difference Between Sum of Even and Odd Numbers
 function differenceEvenOdd(array: number[]): number {
@@ -127,7 +120,6 @@ function differenceEvenOdd(array: number[]): number {
 
 console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
 
-
 // Challenge 9: Count Truthy
 function countTruthy(object: any): number {
   let count = 0;
@@ -140,7 +132,6 @@ function countTruthy(object: any): number {
 }
 
 console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
-
 
 // Challenge 10: Average of Numbers
 function average(array: number[]): number {
@@ -157,9 +148,8 @@ function average(array: number[]): number {
   return sum / array.length;
 }
 
-console.log(average([2, 4, 6, 8])); 
-console.log(average([]));  
-
+console.log(average([2, 4, 6, 8]));
+console.log(average([]));
 
 // Challenge 11: Linear Search
 function linearSearch(arr: unknown[], value: unknown): number {
@@ -176,9 +166,8 @@ function linearSearch(arr: unknown[], value: unknown): number {
   return -1;
 }
 
-console.log(linearSearch([5, 3, 7, 1, 4], 7));   
-console.log(linearSearch([5, 3, 7, 1, 4], 10)); 
-
+console.log(linearSearch([5, 3, 7, 1, 4], 7));
+console.log(linearSearch([5, 3, 7, 1, 4], 10));
 
 // Challenge 12: Reverse Linear Search
 function reverseLinearSearch(arr: unknown[], value: unknown): number {
@@ -195,9 +184,8 @@ function reverseLinearSearch(arr: unknown[], value: unknown): number {
   return -1;
 }
 
-console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));  
-console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));    
-
+console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
+console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
 
 // Challenge 13: Linear search all Indices
 function linearSearchAll(arr: unknown[], value: unknown): number[] {
@@ -216,9 +204,8 @@ function linearSearchAll(arr: unknown[], value: unknown): number[] {
   return valueAppearance;
 }
 
-console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));  
-console.log(linearSearchAll([5, 3, 7, 1, 4], 10));    
-
+console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
 
 // Challenge 14: Count Occurrences
 function countOccurences(arr: string[]): { [key: string]: number } {
@@ -240,7 +227,6 @@ function countOccurences(arr: string[]): { [key: string]: number } {
 const objectExample = ["apple", "banana", "apple", "orange", "banana", "apple"];
 console.log(countOccurences(objectExample));
 
-
 // Challenge 15: Remove Duplicates
 function removeDuplicates(array: (string | number)[]): (string | number)[] {
   let newArray: { [key: string]: string | number } = {};
@@ -258,7 +244,6 @@ function removeDuplicates(array: (string | number)[]): (string | number)[] {
 }
 
 console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
-
 
 // Challenge 16: Most Frequent
 function mostFrequent(array: (string | number)[]): string | number | undefined {
@@ -285,4 +270,4 @@ function mostFrequent(array: (string | number)[]): string | number | undefined {
   return mostAppearance;
 }
 
-console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4])); 
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));

@@ -2,7 +2,6 @@
 
 This repository contains **two sets of TypeScript mini challenges** designed to build your coding skills progressively.
 
-
 ## 🏋️‍♂️ Milestone 1 Challenges – `milestone_1_challenges.ts`
 
 This file has **15 mini challenges** — short, focusing on Variables, Data Types, Operators, String concatenation that help build confidence in TypeScript basics.
@@ -11,15 +10,14 @@ This file has **15 mini challenges** — short, focusing on Variables, Data Type
 
 Think of this file as a gym for your coding brain. You'll find tiny workouts like:
 
-- ➕ Add two numbers  
-- ⏱️ Convert minutes to seconds  
-- 📏 Calculate perimeter  
-- 🤔 Check if a number is negative  
-- 🚗 Can someone drive based on age?  
-- 💪 BMI checker  
-- 🔢 FizzBuzz  
+- ➕ Add two numbers
+- ⏱️ Convert minutes to seconds
+- 📏 Calculate perimeter
+- 🤔 Check if a number is negative
+- 🚗 Can someone drive based on age?
+- 💪 BMI checker
+- 🔢 FizzBuzz
 - 🔄 Loops, conditions, logic — all the good stuff!
-
 
 ## 🏋️‍♀️ Milestone 2 Challenges – `milestone_2challenges.ts`
 
@@ -29,15 +27,14 @@ This file contains **16 more challenges** focusing on basic data structures, alg
 
 You'll practice with:
 
-- Summing positive numbers  
-- Finding max values  
-- Searching arrays  
-- Counting occurrences  
-- Removing duplicates  
-- Working with objects and arrays  
+- Summing positive numbers
+- Finding max values
+- Searching arrays
+- Counting occurrences
+- Removing duplicates
+- Working with objects and arrays
 
 …and many more classic programming problems.
-
 
 ## 🚀 How to Run It
 

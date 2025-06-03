@@ -1,5 +1,5 @@
 // Challenge 1: Return Sum of two numbers
-function addition(num1: number, num2: number) {
+function addition(num1: number, num2: number): number {
   return num1 + num2;
 }
 console.log(addition(3, 5));
@@ -7,29 +7,31 @@ console.log(addition(-6, 9));
 
 // Challenge 2: Convert Minutes into Seconds
 function convert(minutes: number): number {
-  const seconds = minutes * 60;
-  return seconds;
+  return minutes * 60;
 }
 console.log(convert(5));
 console.log(convert(2));
 
 // Challenge 3: Perimeter of a Rectangle
 function findPerimeter(length: number, width: number): number {
-  const perimeter = 2 * (length + width);
-  return perimeter;
+  return 2 * (length + width);
 }
 console.log(findPerimeter(6, 7));
 console.log(findPerimeter(20, 10));
 
 // Challenge 4 : Check Negative
 function isNegative(num: number): boolean {
-  return num < 0;
+  if (num < 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log(isNegative(-23));
 console.log(isNegative(55));
 
 // Challenge 5 : Can I Drive
-function canDrive(name: string, age: number): string {
+function canDrive(name: string, age: number) {
   if (age >= 18) {
     return `${name} is old enough to drive`;
   } else {
@@ -41,15 +43,13 @@ console.log(canDrive("June", 12));
 
 // Challenge 6: Largest Number
 function findLargest(a: number, b: number, c: number): number {
-  let largest = a;
-
-  if (b > largest) {
-    largest = b;
+  if (a > b && a > c) {
+    return a;
+  } else if (b > a && b > c) {
+    return b;
+  } else {
+    return c;
   }
-  if (c > largest) {
-    largest = c;
-  }
-  return largest;
 }
 console.log(findLargest(5, 9, 3));
 console.log(findLargest(-1, -5, -3));
