@@ -38,3 +38,30 @@ function findWinner(candidates: candidates[]) {
 }
 
 console.log(findWinner([{name: "Alice", votes: 50},{ name: "Bob", votes: 75 }]))
+
+
+// Challenge 4 longest word
+function findLongestWord(arr: string[]): string{
+    let longeststring = arr[0]
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i].length > longeststring.length) {
+            longeststring=arr[i];
+        }
+    }
+    return longeststring;
+}
+console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));
+
+// Challenge 5 Count Properties
+interface Person{
+    name: string
+    age: number
+    city:string
+}
+
+function countProperties(Person: object):number {
+    let properties = Object.keys(Person).length;
+    
+    return properties;
+}
+console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
