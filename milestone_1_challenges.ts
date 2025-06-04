@@ -128,8 +128,10 @@ console.log(sumEvenNumbers(6));
 
 // Challenge 12 Multiply by itself
 function powerUp(num: number, times: number) {
-  let power = num ** times;
-  return power;
+  let result = 1;
+  for (let i=1; i<=times; i++){
+    result= result*num;
+  }
 }
 
 console.log(powerUp(2, 3));
