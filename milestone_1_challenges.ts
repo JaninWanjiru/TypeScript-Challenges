@@ -160,8 +160,9 @@ console.log(sumMultiples(10, 2));
 // Challenge 15 Sum of digits
 function sumDigits(num: number): number {
   let sum = 0;
-  for (let i = 1; num > 0; num = Math.floor(num / 10)) {
+  while (num > 0) {
     sum = sum + (num % 10);
+    num = Math.floor(num / 10);
   }
   return sum;
 }
