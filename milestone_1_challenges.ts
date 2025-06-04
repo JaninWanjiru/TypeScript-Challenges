@@ -6,15 +6,17 @@ console.log(addition(3, 5));
 
 //challenge 2: convert minutes into seconds
 function convert(minutes: number): number {
-  return minutes * 60;
+  const seconds = minutes * 60;
+  return seconds;
 }
-console.log(convert(5));
+console.log(convert(25));
 
 // Challenge 3: Perimeter of a Rectangle
 function findPerimeter(length: number, width: number): number {
-  return 2 * (length + width);
+  let perimeter = 2 * (length + width);
+  return perimeter;
 }
-console.log(findPerimeter(6, 7));
+console.log(findPerimeter(15, 30));
 
 // Challenge 4: Check Negative
 function isNegative(number: number): boolean {
@@ -63,8 +65,8 @@ function calculateBMI(weight: number, height: number): string {
     return "Obese";
   }
 }
-console.log(calculateBMI(68, 1.75));
-console.log(calculateBMI(85, 1.8));
+console.log(`Your BMI is - ${calculateBMI(68, 1.75)}`);
+console.log(`Your BMI is - ${calculateBMI(85, 1.8)}`);
 
 // Challenge 8 Greeting based on time
 function greetUser(name: string, hour: number): string {
@@ -75,8 +77,8 @@ function greetUser(name: string, hour: number): string {
   } else if (hour >= 18 && hour <= 21) {
     return `Good evening, ${name}!`;
   } else {
-    return `Good night, ${name}1`;
-  }
+    return `Good night, ${name}!`;
+  } 
 }
 console.log(greetUser("Alice", 9));
 console.log(greetUser("Alice", 15));
@@ -101,13 +103,13 @@ console.log(fizzBuzzCheck(15));
 console.log(fizzBuzzCheck(7));
 
 // Challenge 10 Perimeter2
-function perimeter(letter: string, number: number): number {
+function perimeter(letter: string, num: number): number {
   if (letter === "s") {
-    return number * 4;
+    return num * 4;
   } else if (letter === "c") {
-    return number * 6.28;
+    return num * 6.28;
   } else {
-    return number;
+    return num;
   }
 }
 console.log(perimeter("s", 7));
@@ -132,6 +134,7 @@ function powerUp(num: number, times: number) {
   for (let i=1; i<=times; i++){
     result= result*num;
   }
+  return result;
 }
 
 console.log(powerUp(2, 3));
