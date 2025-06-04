@@ -102,11 +102,9 @@ console.log(fizzBuzzCheck(7));
 
 // Challenge 10 Perimeter2
 function perimeter(letter: string, number: number): number {
-  let letter1 = "s";
-  let letter2 = "c";
-  if (letter1 === "s") {
+  if (letter === "s") {
     return number * 4;
-  } else if (letter2 === "c") {
+  } else if (letter === "c") {
     return number * 6.28;
   } else {
     return number;
